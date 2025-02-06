@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weatherStack.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>weatherStack</title>
+  </head>
+  <body>
+    <div id="weatherCard">
+      <div id="inputSecCon">
+        <input id="cityName" type="text" placeholder="enter city name" />
+        <button id="goBtn">Go</button>
+      </div>
+
+      <div id="timeDateCon" class="hidden">
+        <p>Time & Date</p>
+        <p id="date&time"></p>
+      </div>
+
+      <div id="middle-sec" class="hidden">
+        <img id="wImg" height="100px" />
+        <p id="temperature"></p>
+        <span class="address" id="city"></span>
+        <span class="address" id="region"></span>
+        <span class="address" id="country"></span>
+      </div>
+
+      <div id="lowerMainCon" class="hidden">
+        <div id="lowerSec">
+          <div id="lowerLeftSec">
+            <img src="./assets/humidity.png" />
+
+            <div id="humiditySec">
+              <p id="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div id="lowerRightSec">
+            <img src="./assets/windSpeed.png" />
+
+            <div id="windSpeedSec">
+              <p id="windSpeed"></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weatherStack.js"></script>
+  </body>
+</html>
